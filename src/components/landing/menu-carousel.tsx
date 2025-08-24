@@ -9,8 +9,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const menuImages = [
@@ -31,6 +29,21 @@ const menuImages = [
   },
   {
     src: "/image/04.jpg",
+    alt: "Gourmet sandwich",
+    hint: "gourmet sandwich",
+  },
+  {
+    src: "/image/a1.jpg",
+    alt: "Fresh pastry",
+    hint: "fresh pastry",
+  },
+  {
+    src: "/image/a2.jpg",
+    alt: "Healthy salad",
+    hint: "healthy salad",
+  },
+  {
+    src: "/image/a3.jpg",
     alt: "Gourmet sandwich",
     hint: "gourmet sandwich",
   },
@@ -78,6 +91,16 @@ const menuImages = [
     src: "/image/13.jpg",
     alt: "Stack of pancakes",
     hint: "stack pancakes",
+  },
+  {
+    src: "/image/b1.jpg",
+    alt: "Delicious coffee",
+    hint: "coffee cup",
+  },
+  {
+    src: "/image/b2.jpg",
+    alt: "Fresh pastry",
+    hint: "fresh pastry",
   },
   {
     src: "/image/14.jpg",
@@ -140,6 +163,21 @@ const menuImages = [
     hint: "waffles syrup",
   },
   {
+    src: "/image/c1.jpg",
+    alt: "Delicious coffee",
+    hint: "coffee cup",
+  },
+  {
+    src: "/image/c2.jpg",
+    alt: "Fresh pastry",
+    hint: "fresh pastry",
+  },
+  {
+    src: "/image/c3.jpg",
+    alt: "Healthy salad",
+    hint: "healthy salad",
+  },
+  {
     src: "/image/26.jpg",
     alt: "New Dish",
     hint: "new dish",
@@ -153,6 +191,16 @@ const menuImages = [
     src: "/image/28.jpg",
     alt: "Coffee Beans",
     hint: "coffee beans",
+  },
+  {
+    src: "/image/d1.jpg",
+    alt: "Delicious coffee",
+    hint: "coffee cup",
+  },
+  {
+    src: "/image/d2.jpg",
+    alt: "Fresh pastry",
+    hint: "fresh pastry",
   },
   {
     src: "/image/29.jpg",
@@ -169,6 +217,31 @@ const menuImages = [
     alt: "Dessert Plate",
     hint: "dessert plate",
   },
+  {
+    src: "/image/e1.jpg",
+    alt: "Delicious coffee",
+    hint: "coffee cup",
+  },
+  {
+    src: "/image/e2.jpg",
+    alt: "Fresh pastry",
+    hint: "fresh pastry",
+  },
+  {
+    src: "/image/e3.jpg",
+    alt: "Healthy salad",
+    hint: "healthy salad",
+  },
+  {
+    src: "/image/e4.jpg",
+    alt: "Gourmet sandwich",
+    hint: "gourmet sandwich",
+  },
+  {
+    src: "/image/e5.jpg",
+    alt: "Gourmet sandwich",
+    hint: "gourmet sandwich",
+  },
 ];
 
 export function MenuCarousel() {
@@ -177,22 +250,22 @@ export function MenuCarousel() {
   );
 
   return (
-    <div className="container mx-auto pb-16">
+    <div className="w-full pb-16">
       <Carousel
         plugins={[plugin.current]}
-        className="w-full max-w-4xl mx-auto"
+        className="w-full"
         opts={{
           loop: true,
           align: "start",
         }}
       >
-        <CarouselContent className="-ml-1">
+        <CarouselContent className="-ml-0">
           {menuImages.map((image, index) => (
             <CarouselItem
               key={index}
-              className="pl-1 basis-1/2 md:basis-1/3 lg:basis-1/4"
+              className="pl-0 basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden rounded-none border-0">
                 <CardContent className="flex aspect-square items-center justify-center p-0">
                   <Image
                     src={image.src}
@@ -207,8 +280,6 @@ export function MenuCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </div>
   );

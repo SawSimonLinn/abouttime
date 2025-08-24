@@ -8,7 +8,6 @@ export default function MenuPage() {
     <div className="flex flex-col min-h-dvh bg-background">
       <Header />
       <main className="flex-1">
-        {/* <MenuCarousel /> */}
         <MenuSection />
       </main>
       <Footer />

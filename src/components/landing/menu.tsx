@@ -60,12 +60,12 @@ const menuItems = {
 
 export function MenuSection() {
   return (
-    <section id="menu" className="py-20 md:py-32">
-      <div className="container mx-auto text-center">
+    <section id="menu" className="py-16 md:py-20">
+      <MenuCarousel />
+      <div className="container mx-auto text-center mt-10">
         <h2 className="font-headline text-4xl md:text-5xl font-black text-primary mb-16">
           Our Menu
-        </h2>{" "}
-        <MenuCarousel />
+        </h2>
         <Tabs defaultValue="coffee" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 bg-secondary p-1 h-auto">
             <TabsTrigger value="coffee" className="py-2.5">
