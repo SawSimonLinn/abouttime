@@ -93,16 +93,6 @@ const menuImages = [
     hint: "stack pancakes",
   },
   {
-    src: "/image/b1.jpg",
-    alt: "Delicious coffee",
-    hint: "coffee cup",
-  },
-  {
-    src: "/image/b2.jpg",
-    alt: "Fresh pastry",
-    hint: "fresh pastry",
-  },
-  {
     src: "/image/14.jpg",
     alt: "Savory croissant",
     hint: "savory croissant",
@@ -176,6 +166,16 @@ const menuImages = [
     src: "/image/c3.jpg",
     alt: "Healthy salad",
     hint: "healthy salad",
+  },
+  {
+    src: "/image/c4.jpg",
+    alt: "Delicious coffee",
+    hint: "coffee cup",
+  },
+  {
+    src: "/image/c5.jpg",
+    alt: "Fresh pastry",
+    hint: "fresh pastry",
   },
   {
     src: "/image/26.jpg",
