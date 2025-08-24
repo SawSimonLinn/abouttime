@@ -1,20 +1,20 @@
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from "@/components/ui/card";
 
 const reels = [
   {
-    src: 'https://videos.pexels.com/video-files/3209828/3209828-sd_640_360_30fps.mp4',
-    alt: 'A person pouring milk into a coffee.',
-    hint: 'coffee pour',
+    src: "/video/vibe-05.mp4",
+    alt: "A person pouring milk into a coffee.",
+    hint: "coffee pour",
   },
   {
-    src: 'https://videos.pexels.com/video-files/5985169/5985169-sd_640_360_25fps.mp4',
-    alt: 'Close-up of a coffee machine brewing.',
-    hint: 'coffee brewing',
+    src: "/video/vibe-02.mp4",
+    alt: "Close-up of a coffee machine brewing.",
+    hint: "coffee brewing",
   },
   {
-    src: 'https://videos.pexels.com/video-files/4431525/4431525-sd_540_960_30fps.mp4',
-    alt: 'A delicious-looking croissant on a plate.',
-    hint: 'fresh croissant',
+    src: "/video/vibe-04.mp4",
+    alt: "A delicious-looking croissant on a plate.",
+    hint: "fresh croissant",
   },
 ];
 

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -6,11 +6,11 @@ export function AboutSection() {
       <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl md:h-[500px]">
           <Image
-            src="https://images.unsplash.com/photo-1627401318951-badc4bf90cd1?q=80&w=2350&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/img/about-image.jpg"
             alt="Inside the vibrant AboutTime Hub cafe"
             data-ai-hint="vibrant cafe"
             fill
-            className="object-cover"
+            className="object-cover object-bottom"
           />
         </div>
         <div className="space-y-6">
@@ -30,7 +30,9 @@ export function AboutSection() {
             cramming for an exam, or just chilling, we got you.
           </p>
           <p className="text-muted-foreground text-lg">
-            Explore our two-story space, including a cozy loft perfect for focused work. We also offer plenty of outdoor seating with a vibrant street-side patio and a chill backyard area.
+            Explore our two-story space, including a cozy loft perfect for
+            focused work. We also offer plenty of outdoor seating with a vibrant
+            street-side patio and a chill backyard area.
           </p>
         </div>
       </div>

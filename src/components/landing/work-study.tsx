@@ -1,5 +1,5 @@
-import { Wifi, Power, Zap } from 'lucide-react';
-import Image from 'next/image';
+import { Wifi, Power, Zap } from "lucide-react";
+import Image from "next/image";
 
 export function WorkStudySection() {
   return (
@@ -9,7 +9,7 @@ export function WorkStudySection() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1651883623292-1508fe67687c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="/img/background-image-02.jpg"
           alt="Comfortable work and study area in the cafe"
           data-ai-hint="study area"
           fill
@@ -52,7 +52,9 @@ export function WorkStudySection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Focus Zones</h3>
-                <p className="text-sm text-white/80">Quiet spots for deep work.</p>
+                <p className="text-sm text-white/80">
+                  Quiet spots for deep work.
+                </p>
               </div>
             </div>
           </div>
