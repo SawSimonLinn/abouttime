@@ -1,16 +1,7 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { event } from "@/lib/gtag";
 
 export function HeroSection() {
-  const handleClick = () => {
-    event({
-      action: "view_menu",
-      category: "engagement",
-      label: "Menu Button",
-    });
-  };
   return (
     <section className="relative h-[80vh] min-h-[500px] md:h-[calc(100vh-80px)] w-full flex items-center justify-start text-left text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -40,9 +31,7 @@ export function HeroSection() {
             size="lg"
             className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition-transform hover:scale-105"
           >
-            <Link href="/menu" onClick={handleClick}>
-              View Our Menu
-            </Link>
+            <Link href="/menu">View Our Menu</Link>
           </Button>
         </div>
       </div>

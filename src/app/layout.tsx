@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import { Suspense } from "react";
-import ConsentBanner from "@/components/consent-banner";
-import { Analytics } from "@/components/analytics";
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "AboutTime Cafe",
@@ -16,8 +13,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const GA_ID = "G-R35FQ191B5"; // replace with your GA tag
-
   return (
     <html lang="en">
       <head>
@@ -31,28 +26,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
-
-        {/* Google Analytics */}
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        />
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}', { send_page_view: false });
-          `}
-        </Script>
       </head>
       <body className="font-body antialiased">
-        {/* Loads GA only after user accepts */}
-        <ConsentBanner />
-        <Suspense fallback={null}>
-          <Analytics />
-        </Suspense>
-
+        <Analytics />
         {children}
         <Toaster />
       </body>
