@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import ConsentBanner from "@/components/consent-banner";
+import { Analytics } from "@/components/analytics";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -44,6 +46,11 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="font-body antialiased">
+        {/* Loads GA only after user accepts */}
+        <ConsentBanner />
+        {/* Sends page_view on route changes (only works once GA is loaded) */}
+        <Analytics />
+
         {children}
         <Toaster />
       </body>

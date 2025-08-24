@@ -12,7 +12,7 @@ export function HeroSection() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover md:object-top"
+          className="w-full h-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/60" />
