@@ -1,30 +1,33 @@
-import { Footer } from '@/components/landing/footer';
-import { Header } from '@/components/landing/header';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Footer } from "@/components/landing/footer";
+import { Header } from "@/components/landing/header";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
+import Link from "next/link";
 
 const blogPosts = [
   {
-    slug: 'the-perfect-brew',
-    title: '5 Tips for the Perfect Home Brew',
-    description: 'Unlock the secrets to brewing coffee that rivals your favorite cafe. From bean selection to brewing techniques, we cover it all.',
-    image: 'https://placehold.co/600x400.png',
-    hint: 'coffee brewing',
+    slug: "the-perfect-brew",
+    title: "5 Tips for the Perfect Home Brew",
+    description:
+      "Unlock the secrets to brewing coffee that rivals your favorite cafe. From bean selection to brewing techniques, we cover it all.",
+    image: "/img/blog-image-01.jpg",
+    hint: "coffee brewing",
   },
   {
-    slug: 'productivity-hacks',
-    title: 'Productivity Hacks for Remote Workers',
-    description: 'Tired of distractions at home? Discover how to create a focused and productive workspace, fueled by the best coffee.',
-    image: 'https://placehold.co/600x400.png',
-    hint: 'remote work',
+    slug: "productivity-hacks",
+    title: "Productivity Hacks for Remote Workers",
+    description:
+      "Tired of distractions at home? Discover how to create a focused and productive workspace, fueled by the best coffee.",
+    image: "/img/blog-image-02.jpg",
+    hint: "remote work",
   },
   {
-    slug: 'latte-art-101',
-    title: 'Latte Art 101: A Beginner\'s Guide',
-    description: 'Impress your friends with your newfound barista skills. Our step-by-step guide makes creating beautiful latte art easy and fun.',
-    image: 'https://placehold.co/600x400.png',
-    hint: 'latte art',
+    slug: "latte-art-101",
+    title: "Latte Art 101: A Beginner's Guide",
+    description:
+      "Impress your friends with your newfound barista skills. Our step-by-step guide makes creating beautiful latte art easy and fun.",
+    image: "/img/blog-image-03.jpg",
+    hint: "latte art",
   },
 ];
 
@@ -54,8 +57,12 @@ export default function BlogPage() {
                       </div>
                     </CardContent>
                     <CardHeader className="flex-1">
-                      <CardTitle className="text-xl mb-2">{post.title}</CardTitle>
-                      <p className="text-muted-foreground text-sm">{post.description}</p>
+                      <CardTitle className="text-xl mb-2">
+                        {post.title}
+                      </CardTitle>
+                      <p className="text-muted-foreground text-sm">
+                        {post.description}
+                      </p>
                     </CardHeader>
                   </Card>
                 </Link>

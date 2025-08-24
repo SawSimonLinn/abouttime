@@ -3,28 +3,33 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
 
 const faqs = [
   {
-    question: 'Is there parking available?',
+    question: "Is there parking available?",
     answer:
-      'Yes! We have plenty of parking available in our dedicated lot, so you can focus on your work or relaxation without worrying about finding a spot.',
+      "Yes! We have plenty of parking available in our dedicated lot, so you can focus on your work or relaxation without worrying about finding a spot.",
   },
   {
-    question: 'Do you have outdoor seating?',
+    question: "Do you have outdoor seating?",
     answer:
-      'Absolutely. We have a fantastic outdoor patio on the street side for people-watching, as well as a more private backyard space to unwind.',
+      "Absolutely. Our outdoor seating options include sidewalk seating on the street side for people-watching and a more private backyard space with a fireplace, multiple seats, and a breezy atmosphere.",
   },
   {
-    question: 'What\'s the seating like inside?',
+    question: "What's the seating like inside?",
     answer:
-      'We have two floors of seating, including a unique loft coffee shop area on the second floor. It\'s a great spot for focused work or a quiet conversation.',
+      "We have two floors of seating, including a unique loft coffee shop area on the second floor. It's a great spot for focused work or a quiet conversation.",
   },
   {
-    question: 'Do you offer Wi-Fi?',
+    question: "Do you offer Wi-Fi?",
     answer:
-      'Of course! We provide free, high-speed Wi-Fi for all our guests. Just ask our staff for the password when you arrive.',
+      "Of course! We provide free, high-speed Wi-Fi for all our guests. Just ask our staff for the password when you arrive.",
+  },
+  {
+    question: "Is your cafe pet-friendly?",
+    answer:
+      "Yes, we welcome well-behaved pets in our outdoor seating areas. Please ensure your pet is on a leash and supervised at all times.",
   },
 ];
 

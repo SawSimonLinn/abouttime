@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const galleryImages = [
   {
-    src: "/img/01.jpg",
+    src: "/img/07.jpg",
     alt: "A latte with intricate foam art",
     hint: "latte art",
   },

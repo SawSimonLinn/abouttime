@@ -6,13 +6,16 @@ import {
   Instagram,
   Facebook,
   Twitter,
-} from 'lucide-react';
-import Link from 'next/link';
-import { CopyrightYear } from './copyright-year';
+} from "lucide-react";
+import Link from "next/link";
+import { CopyrightYear } from "./copyright-year";
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-secondary text-secondary-foreground py-16">
+    <footer
+      id="contact"
+      className="bg-secondary text-secondary-foreground py-16"
+    >
       <div className="container mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
         <div className="space-y-4">
           <div className="flex items-center justify-center md:justify-start gap-3">
@@ -24,41 +27,64 @@ export function Footer() {
           </p>
         </div>
         <div className="space-y-4">
-          <h4 className="font-bold text-lg tracking-wider uppercase text-accent">Contact & Hours</h4>
+          <h4 className="font-bold text-lg tracking-wider uppercase text-accent">
+            Contact & Hours
+          </h4>
           <ul className="space-y-3">
             <li className="flex items-center justify-center md:justify-start gap-3">
               <MapPin className="h-5 w-5 flex-shrink-0 text-accent" />
-              <span>123 Coffee Lane, Brewville, CA 90210</span>
+              <Link
+                href="https://maps.app.goo.gl/xpfPwHCZyLoP9rw8A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-black hover:underline hover:text-accent transition-colors"
+              >
+                3287 Wilshire Blvd B, Los Angeles, California 90010
+              </Link>
             </li>
             <li className="flex items-center justify-center md:justify-start gap-3">
               <Clock className="h-5 w-5 flex-shrink-0 text-accent" />
-              <span>Mon - Fri: 7am - 9pm | Sat - Sun: 8am - 8pm</span>
+              {/* daily hours | MON-SAT 8 AM-1 AM | SUN 8 AM-12 AM (kitchen closed at 2 AM) */}
+              <span>Mon - Sat: 8am - 1am | Sun: 8am - 12am</span>
             </li>
             <li className="flex items-center justify-center md:justify-start gap-3">
               <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-              <span>(123) 456-7890</span>
+              <Link
+                href="tel:+12133409070"
+                className="underline text-black hover:underline hover:text-accent transition-colors"
+              >
+                (213) 340-9070
+              </Link>
             </li>
           </ul>
         </div>
         <div className="space-y-4">
-          <h4 className="font-bold text-lg tracking-wider uppercase text-accent">Follow Us</h4>
+          <h4 className="font-bold text-lg tracking-wider uppercase text-accent">
+            Follow Us
+          </h4>
           <div className="flex items-center justify-center md:justify-start gap-5">
             <Link
-              href="#"
+              href="https://www.instagram.com/abouttimecafe/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="text-muted-foreground hover:text-accent transition-colors"
             >
               <Instagram className="h-6 w-6" />
             </Link>
             <Link
-              href="#"
+              href="https://www.facebook.com/abouttimecafe/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="text-muted-foreground hover:text-accent transition-colors"
             >
               <Facebook className="h-6 w-6" />
             </Link>
             <Link
-              href="#"
+              href="https://twitter.com/abouttimecafe"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Twitter"
               className="text-muted-foreground hover:text-accent transition-colors"
             >
