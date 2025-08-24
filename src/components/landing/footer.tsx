@@ -20,7 +20,7 @@ export function Footer() {
         <div className="space-y-4">
           <div className="flex items-center justify-center md:justify-start gap-3">
             <Coffee className="h-7 w-7 text-accent" />
-            <h3 className="text-2xl font-bold">AboutTime Hub</h3>
+            <h3 className="text-2xl font-bold">AboutTime Cafe</h3>
           </div>
           <p className="text-sm text-muted-foreground">
             Your daily grind, upgraded.
@@ -95,7 +95,7 @@ export function Footer() {
       </div>
       <div className="container mx-auto mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
         <p>
-          &copy; <CopyrightYear /> AboutTime Hub. All Rights Reserved.
+          &copy; <CopyrightYear /> AboutTime Cafe. All Rights Reserved.
         </p>
       </div>
     </footer>

@@ -18,7 +18,7 @@ export default function AboutPage() {
                 Our Mission.
               </h2>
               <p className="text-muted-foreground text-lg">
-                Our mission at AboutTime Hub is to create a vibrant community
+                Our mission at AboutTime Cafe is to create a vibrant community
                 space where creativity and productivity thrive. We aim to
                 provide more than just coffee; we offer an environment that
                 inspires and supports your daily hustle.
@@ -37,7 +37,7 @@ export default function AboutPage() {
             <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl md:h-[500px]">
               <Image
                 src="/img/about-logo.png"
-                alt="Inside the vibrant AboutTime Hub cafe"
+                alt="Inside the vibrant AboutTime Cafe"
                 data-ai-hint="vibrant cafe"
                 fill
                 className="object-cover object-bottom"

@@ -1,9 +1,9 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import ConsentBanner from "@/components/consent-banner";
 import { Analytics } from "@/components/analytics";
+import Script from "next/script";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
@@ -13,9 +13,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
+  const GA_ID = "G-R35FQ191B5"; // replace with your GA tag
+
   return (
     <html lang="en">
       <head>
@@ -29,10 +31,24 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}', { send_page_view: false });
+          `}
+        </Script>
       </head>
       <body className="font-body antialiased">
+        {/* Loads GA only after user accepts */}
         <ConsentBanner />
-        {/* ⬇️ wrap anything that uses useSearchParams/useRouter in Suspense */}
         <Suspense fallback={null}>
           <Analytics />
         </Suspense>

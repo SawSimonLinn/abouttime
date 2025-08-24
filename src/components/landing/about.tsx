@@ -7,7 +7,7 @@ export function AboutSection() {
         <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl md:h-[500px]">
           <Image
             src="/img/about-image.jpg"
-            alt="Inside the vibrant AboutTime Hub cafe"
+            alt="Inside the vibrant AboutTime Cafe"
             data-ai-hint="vibrant cafe"
             fill
             className="object-cover object-bottom"
@@ -18,7 +18,7 @@ export function AboutSection() {
             About Us.
           </h2>
           <p className="text-muted-foreground text-lg">
-            We're not just a coffee shop; we're a launchpad. AboutTime Hub is
+            We're not just a coffee shop; we're a launchpad. AboutTime Cafe is
             where killer coffee, high-speed Wi-Fi, and creative energy collide.
             It's a space designed for connection, focus, and making things
             happen.
