@@ -37,7 +37,7 @@ export function Footer() {
                 href="https://maps.app.goo.gl/xpfPwHCZyLoP9rw8A"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline text-black hover:underline hover:text-accent transition-colors"
+                className="text-black hover:underline hover:text-accent transition-colors"
               >
                 3287 Wilshire Blvd B, Los Angeles, California 90010
               </Link>
@@ -51,7 +51,7 @@ export function Footer() {
               <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
               <Link
                 href="tel:+12133409070"
-                className="underline text-black hover:underline hover:text-accent transition-colors"
+                className="text-black hover:underline hover:text-accent transition-colors"
               >
                 (213) 340-9070
               </Link>
