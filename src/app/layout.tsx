@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Suspense } from "react";
 import ConsentBanner from "@/components/consent-banner";
 import { Analytics } from "@/components/analytics";
 import Script from "next/script";
-import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "AboutTime Cafe",
