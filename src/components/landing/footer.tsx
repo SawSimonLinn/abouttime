@@ -97,6 +97,10 @@ export function Footer() {
         <p>
           &copy; <CopyrightYear /> AboutTime Cafe. All Rights Reserved.
         </p>
+        <p className="text-xs text-gray-500 text-center mt-6">
+          This is an <strong>unofficial demo website</strong> created by Simon
+          (sawsimonlinn.com) as a free practice project.
+        </p>
       </div>
     </footer>
   );
